@@ -1,0 +1,12 @@
+[user]
+	email = alexkolodeev@gmail.com
+	name = Aleksandr Kolodeev
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	ca = commit --amend
+	curr = br --show-current
+[core]
+	editor = vim
