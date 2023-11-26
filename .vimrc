@@ -15,8 +15,16 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Luxed/ayu-vim'
 Plug 'tpope/vim-fugitive'
-Plug 'powerline/powerline'
+Plug 'davidhalter/jedi-vim' 
+Plug 'ervandew/supertab'
+Plug 'vim-airline/vim-airline'
+Plug 'psf/black', { 'branch': 'stable' }
 call plug#end()
+
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end
 
 set termguicolors     " enable true colors support
 set background=dark     " for either mirage or dark version.
