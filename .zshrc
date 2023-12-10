@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   zsh-autosuggestions
+  poetry
 )
 
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
